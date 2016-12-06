@@ -12,6 +12,7 @@
 		0FEA78171DF5D80200AD3FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEA78151DF5D80200AD3FCD /* Main.storyboard */; };
 		0FEA78191DF5D80200AD3FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FEA78181DF5D80200AD3FCD /* Assets.xcassets */; };
 		0FEA781C1DF5D80200AD3FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEA781A1DF5D80200AD3FCD /* LaunchScreen.storyboard */; };
+		0FEA78261DF5F7E200AD3FCD /* ilaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA78251DF5F7E200AD3FCD /* ilaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0FEA78181DF5D80200AD3FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FEA781B1DF5D80200AD3FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FEA781D1DF5D80200AD3FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FEA78251DF5F7E200AD3FCD /* ilaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ilaTableViewCell.swift; path = ../ilaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0FEA78181DF5D80200AD3FCD /* Assets.xcassets */,
 				0FEA781A1DF5D80200AD3FCD /* LaunchScreen.storyboard */,
 				0FEA781D1DF5D80200AD3FCD /* Info.plist */,
+				0FEA78251DF5F7E200AD3FCD /* ilaTableViewCell.swift */,
 			);
 			path = AppDemo;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FEA78261DF5F7E200AD3FCD /* ilaTableViewCell.swift in Sources */,
 				0FEA78141DF5D80200AD3FCD /* ViewController.swift in Sources */,
 				0FEA78121DF5D80200AD3FCD /* AppDelegate.swift in Sources */,
 			);
