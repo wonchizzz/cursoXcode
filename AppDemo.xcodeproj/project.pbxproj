@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F7B1D1B1DF71A6200094B46 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B1D1A1DF71A6200094B46 /* DetalleViewController.swift */; };
+		0F7B1D1D1DF739EB00094B46 /* AgregarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B1D1C1DF739EB00094B46 /* AgregarViewController.swift */; };
 		0FEA78121DF5D80200AD3FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA78111DF5D80200AD3FCD /* AppDelegate.swift */; };
 		0FEA78141DF5D80200AD3FCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA78131DF5D80200AD3FCD /* ViewController.swift */; };
 		0FEA78171DF5D80200AD3FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEA78151DF5D80200AD3FCD /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F7B1D1A1DF71A6200094B46 /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
+		0F7B1D1C1DF739EB00094B46 /* AgregarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarViewController.swift; sourceTree = "<group>"; };
 		0FEA780E1DF5D80200AD3FCD /* AppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FEA78111DF5D80200AD3FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FEA78131DF5D80200AD3FCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				0FEA781A1DF5D80200AD3FCD /* LaunchScreen.storyboard */,
 				0FEA781D1DF5D80200AD3FCD /* Info.plist */,
 				0FEA78251DF5F7E200AD3FCD /* ilaTableViewCell.swift */,
+				0F7B1D1A1DF71A6200094B46 /* DetalleViewController.swift */,
+				0F7B1D1C1DF739EB00094B46 /* AgregarViewController.swift */,
 			);
 			path = AppDemo;
 			sourceTree = "<group>";
@@ -139,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7B1D1B1DF71A6200094B46 /* DetalleViewController.swift in Sources */,
 				0FEA78261DF5F7E200AD3FCD /* ilaTableViewCell.swift in Sources */,
 				0FEA78141DF5D80200AD3FCD /* ViewController.swift in Sources */,
 				0FEA78121DF5D80200AD3FCD /* AppDelegate.swift in Sources */,
+				0F7B1D1D1DF739EB00094B46 /* AgregarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +309,7 @@
 				0FEA78221DF5D80200AD3FCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
