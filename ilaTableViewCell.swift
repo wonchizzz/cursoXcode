@@ -15,6 +15,11 @@ class ilaTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lbDerecha: UILabel!
     
+    @IBOutlet weak var imgFila: UIImageView!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

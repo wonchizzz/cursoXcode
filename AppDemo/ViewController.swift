@@ -7,23 +7,39 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DetalleviewControlllerDelegate,AgregarViewControllerDelegate{
     //MARK : Declaraciones
     var filaSelecionada = -1
     var esEdicion = false
     
-    var datos = [ ("Alan",30),("Ramon",25),("Carlos",38),("Denisse",27),("juan",26)]
+    var datos = [ ("Alan",30),("Ramon",25),("Carlos",38),("Denisse",27),("juan",26),("Alan",30),("Ramon",25),("Carlos",38),("Denisse",27),("Alan",30),("Ramon",25),("Carlos",38),("Denisse",27),("Alan",30),("Ramon",25),("Carlos",38),("Denisse",27),("Alan",30),("Ramon",25),("Carlos",38),("Denisse",27),("Alan",30),("Ramon",25),("Carlos",38),("Denisse",27)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Vista cargada")
+        imgFoto.image = UIImage(named: "perro")
+        imgNombre.text = " EL PERRO"
     }
+    @IBOutlet weak var imgNombre: UILabel!
+    
+    @IBOutlet weak var imgFoto: UIImageView!
+    
     @IBOutlet weak var buton: UIButton!
     
     @IBOutlet weak var tlbTabla: UITableView!
 
+    @IBAction func btnRefresh(_ sender: Any) {
+        let idFacebook = FBSDKAccessToken.current().userID
+        let cadenaURL = "http://graph.facebook.com/\(idFacebook!)/picture?type=large"
+       
+        imgFoto.loadPicture(url: cadenaURL)
+        
+        
+        
+    }
     @IBAction func btnPresionado(_ sender: Any) {
         print("boton presionado")
         performSegue(withIdentifier: "Agregar Segue", sender: self)
@@ -118,20 +134,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         
-        let proto = (indexPath.row % 2 == 0 ) ? "proto1" : "proto2"
-        let vista = tableView.dequeueReusableCell(withIdentifier: proto, for: indexPath) as! ilaTableViewCell
+        //let proto = (indexPath.row % 2 == 0 ) ? "proto1" : "proto2"
+        let vista = tableView.dequeueReusableCell(withIdentifier: "proto1", for: indexPath) as! ilaTableViewCell
         
-        if indexPath.row % 2 == 0{
+        
         vista.lbIzquierda.text = "\(datos[indexPath.row].0)"
         vista.lbDerecha.text = "\(datos[indexPath.row].1)"
         
-        } else {
-            vista.lbDerecha.text = "\(datos[indexPath.row].1)"
-            vista.lbIzquierda.text = "\(datos[indexPath.row].0)"
-            
-
+        let idFacebook = FBSDKAccessToken.current().userID
+        let cadenaURL = "http://graph.facebook.com/\(idFacebook!)/picture?type=large"
         
-        }
+        vista.imgFila.loadPicture(url: cadenaURL)
+        
         return vista
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
